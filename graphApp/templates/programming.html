@@ -1,7 +1,16 @@
 {% extends "products.html" %}
+<h1>Programming Languages</h1>
+{% block content %}
+    <div id="head">
+       <h1>Policies</h1>
+        {{div| safe }}
+    </div>
 
+</body>
 
-   <h1>Programming Languages<h1>
-    {{div| safe}}
-       {% block content %}
-       {% endblock %}
+    <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.js"></script>
+    <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.1.0.min.js"></script>
+    <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-tables-1.1.0.min.js"></script>
+    <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-api-1.1.0.min.js"></script>
+{{script | safe}}
+{% endblock %}

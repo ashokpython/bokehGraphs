@@ -11,7 +11,7 @@ class Products(models.Model):
     )
     name = models.CharField(max_length=100)
     color = models.CharField(max_length=100, choices=COLOR)
-    price = models.IntegerField()
+
 
     def __str__(self):
-        return '{}: - {}: - {}:'.format(self.name, self.color, self.price)
+        return '{}: - {}: - {}:'.format(self.name, self.color)
